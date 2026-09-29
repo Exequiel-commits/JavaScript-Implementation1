@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transactions</title>
+
+    <link rel="stylesheet" href="transactions.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-title">Matcha POS</div>
+            <div class="logo-subtitle">CASHIER REGISTER SYSTEM</div>
+        </div>
+
+        <nav>
+            <div class="nav-item">◆ &nbsp; Dashboard</div>
+            <div class="nav-item">▤ &nbsp; Point of Sale</div>
+            <div class="nav-item">■ &nbsp; Inventory</div>
+
+            <div class="nav-item active">
+                ☷ &nbsp; Transactions
+            </div>
+
+            <div class="nav-item">▲ &nbsp; Reports</div>
+            <div class="nav-item">◈ &nbsp; Product Management</div>
+        </nav>
+
+        <div class="account">
+            <div class="account-name">
+                <span class="account-icon">A</span>
+                admin · admin
+            </div>
+
+            <button class="logout-button">Log out</button>
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <h1>Transactions</h1>
+
+        <p class="description">
+            Full transaction history.
+        </p>
+
+
+        <div class="filters">
+
+            <input
+                type="date"
+                id="transactionDate"
+                onchange="searchTransactions()"
+            >
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Receipt #</th>
+                        <th>Date/Time</th>
+                        <th>Items</th>
+                        <th>Payment</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="transactionTableBody">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <script src="transactions.js"></script>
+
+</body>
+
+</html>
