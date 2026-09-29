@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background-color: #1d1d12;
+    color: #d6c98a;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 45px;
+}
+
+.logo-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e1cf75;
+}
+
+.logo-subtitle {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    padding: 13px 12px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #c9bd78;
+}
+
+.nav-item.active {
+    background-color: #a9c84a;
+    color: #20200f;
+}
+
+.account {
+    margin-top: auto;
+}
+
+.account-name {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.account-icon {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background-color: #d6b83f;
+    color: #292912;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.logout-button {
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: transparent;
+
+    border: 1px solid #4b4b25;
+    border-radius: 4px;
+
+    color: #d6c98a;
+
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 250px;
+
+    padding: 45px 55px;
+}
+
+h1 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    color: #333;
+}
+
+.description {
+    margin-top: 8px;
+    margin-bottom: 25px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+#transactionDate {
+    width: 165px;
+
+    padding: 10px;
+
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+
+    background-color: white;
+
+    font-size: 14px;
+}
+
+.table-container {
+    width: 100%;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+th {
+    padding: 15px 12px;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    color: #555;
+
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 17px 12px;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    color: #555;
+}
+
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.view-button {
+    padding: 7px 18px;
+
+    background-color: white;
+
+    border: 1px solid #888;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+.view-button:hover {
+    background-color: #eeeeee;
+}
+
+.no-results {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+}
